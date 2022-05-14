@@ -1,11 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -13,11 +20,38 @@ img {
     height: 200px;
 }
 
-/*Colors for the <strong> tags for each patrick*/
-.blue{color: blue;}
-.cyan{color: cyan;}
-.green{color: green;}
-.pink{color: darkviolet;}
+/*Colors for the <strong> tags for each patrick and images*/
+.blue{
+    color: blue;
+}
+
+img.blue {
+    border: 3px solid blue;
+}
+
+.cyan{
+    color: cyan;
+}
+
+img.cyan {
+    border: 3px solid cyan;
+}
+
+.green{
+    color: green;
+}
+
+img.green {
+    border: 3px solid green;
+}
+
+.pink{
+    color: darkviolet;
+}
+
+img.pink {
+    border: 3px solid darkviolet;
+}
 
 ul {
     list-style: none;
@@ -38,21 +72,31 @@ a {
     color: #f9faf8
 }
 
+.footer {
+    width: 100%;
+    /* padding: 20px; */
+    color: #f9faf8;
+    text-align: center;
+}
+
 .header, .footer, .awesome {
     background-color: #1f2937;
 }
 
 /* Style for the very top portion of the page: the header
     This includes "header logo" + "header link one ..." */
+
 .header {
     width: 100%;
     display: flex;
-    padding: 10px;
+    padding-top: 25px;
+    /* padding: 10px; */
+    /* margin-top: -10px; */
 }
 
 .logo {
     margin-right: auto;
-    margin-left: 15px;
+    margin-left: 190px;
 }
 
 .links {
@@ -60,14 +104,20 @@ a {
     display: flex;
     gap: 10px;
     margin-left: auto;
+    margin-right: 190px;
 }
 
 
 /* Styling for "This website is Awesome portion of the page */
 .awesome-header {
+    margin-top: 30px;
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 800;
+}
+
+.awesome img {
+    margin-top: 30px;
 }
 
 .awesome {
@@ -80,7 +130,7 @@ a {
 }
 
 .awesome-text {
-    width: 40%;
+    width: 50%;
 }
 
 .awesome-button {
@@ -92,10 +142,111 @@ a {
     color: white;
     border-radius: 9px;
     border: none;
+    cursor: pointer;
 }
 
 .awesome img {
     border: solid orange;
 }
 
-/* */
+/* Styling for "Some random information" part of the page below. */
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    text-align: center;
+    margin: 50px;
+}
+
+.info {
+    width: 100%;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture .text {
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+
+/* Styling for "inspirational quote" section of webpage is below */
+.quote {
+    width: 100%;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    color: #1f2937;
+    padding: 10px;
+}
+
+.quote-text {
+    width: 50%;
+    margin: auto;
+}
+
+.patrick{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 42px;
+}
+
+.actual-quote {
+    font-style: italic;
+}
+
+/* Styling for call to action is below */
+.action {
+    display: flex;
+    background-color: #3882f6;
+    color: white;
+    margin: 40px;
+    border-radius: 8px;
+    padding: 40px;
+    gap: 10px;
+}
+
+.action-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.action-subtitle {
+    font-size: 16px;
+    padding-top: 12px;
+    padding-right: 20px;
+}
+
+.action-button {
+    margin-top: 5px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 9px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* Footer styling below */
+.footer {
+    padding: 20px;
+}
